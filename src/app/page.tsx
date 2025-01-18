@@ -1,4 +1,6 @@
 "use client";
+"use cache";
+
 import ModalVideo from './components/modal-video';
 import VideoThumb1 from "../../public/videos/cover/c1.jpg";
 import NavBar from "./Navbar";
