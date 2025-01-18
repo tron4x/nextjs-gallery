@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "settings": {},
+  "parserOptions": {},
+  "parser": "",
+  "ignorePatterns": [],
+  "plugins": [],
+  "globals": {},
+  "root": false,
+  "rules": {},
+  "overrides": [],
+  "env": {},
+  "noInlineConfig": false,
+  "ecmaFeatures": {}
+}
