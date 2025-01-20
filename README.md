@@ -36,6 +36,18 @@ Reusable animated components.
 >Supported image format is JPG, JPEG<br>
 >Supported audio format is MP3
 
+##### Table of Contents  
+[Project structure](#project-structure)<br>
+[Getting Started](#getting-started)<br>
+[Install Dependencies](#install-dependencies)<br>
+[Run Project in development mode](#run-project-in-development-mode)<br>
+[Production Build](#production-build)<br>
+[Redis function](#redis-function)<br>
+[Remove redis](#remove-redis)<br>
+[Videos](#videos)<br>
+[Images](#images)<br>
+[mp3 files](#mp3-files)<br>
+
 # Project structure
 ```shell
 .
@@ -73,11 +85,6 @@ Make sure if nextjs is installed on your computer.
 $ npm install
 ```
 It will create node_module folder in this all dependency files will be install with this command.
-
-## Update dependencies
-```
-$ npm i 
-```
 
 ## Run Project in development mode
 ```
