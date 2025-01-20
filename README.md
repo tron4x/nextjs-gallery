@@ -21,6 +21,10 @@ Reusable animated components.
 * Redis ( Optional )
 * S3 Bucket ( Optional )
 * Docker ( Optional, if you want to deploy on kubernetes )
+
+> [!WARNING]
+> Next.js 15 is currently not supported.<br>
+> Coming in next release
   
 >[!IMPORTANT]
 > S3 is not implemented in this release.<br>
@@ -70,9 +74,9 @@ $ npm install
 ```
 It will create node_module folder in this all dependency files will be install with this command.
 
-## Update Next.js
+## Update dependencies
 ```
-$ npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+$ npm i 
 ```
 
 ## Run Project in development mode
