@@ -4,19 +4,28 @@
 import ModalVideo from './components/modal-video';
 import VideoThumb1 from "../../public/videos/cover/c1.jpg";
 import NavBar from "./Navbar";
-import useSound from 'use-sound';
-
 import mp3 from "../../public/1.mp3";
+import { useState } from "react";
+import useSound from "use-sound";
 
 const BoopButton = () => {
-  const [play] = useSound(mp3);
+  const [play, { stop, sound }] = useSound(mp3);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  return (
-    <button onClick={() => play()} className="bg-blue-500 text-white px-1 py-1 rounded">
-      Play Sound
-    </button>
-  );
-};
+  const handleClick = () => {
+    if (isPlaying) {
+      stop();
+    } else {
+      play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  if (sound) {
+    sound.on('end', () => {
+      setIsPlaying(false);
+    });
+  }
 
 export default function Home() {
   return (
